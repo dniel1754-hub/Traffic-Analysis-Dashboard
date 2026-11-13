@@ -791,11 +791,12 @@ if uploaded_file is not None:
             type="password",
             help="Get a key from Google AI Studio (do NOT hardcode or submit your API key in the ZIP!)"
         )
-    with ai_col2:
+   with ai_col2:
         model_choice = st.selectbox(
             "🧠 Gemini Model:",
-            ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"],
+            ["gemini-3.8-flash", "gemini-2.5-flash", "gemini-2.0-flash"],
             index=0
+        )
         )
 
     # Quick-select sample questions (Directly supports Section 31 & 33!)
