@@ -61,7 +61,8 @@ The dashboard will automatically open in your default browser at `http://localho
 
 ### 4. 🤖 AI-Powered Traffic Assistant with Evidence (Sections 30–34)
 - **Structured Context Extraction:** Instead of sending the raw binary PCAP to the LLM, the system extracts structured packet summaries, endpoint statistics, HTTP transactions, and the currently selected HTTP stream as grounded context.
-- **Free-Form Q&A (Sec. 30–31):** Ask questions in Hebrew or English (includes quick-select templates for slowest request, status codes, requests per host, and inspecting the selected stream).
+- **Free-Form Q&A (Sec. 30–31):** Ask questions in Hebrew or English , for asking question you need to enter your API key (includes quick-select templates for slowest request, status codes, requests per host, and inspecting the selected stream).
+
 - **Verifiable Evidence (Sec. 32):** The prompt enforces strict grounding — every answer cites exact `Frame #` numbers, `Timestamps`, IP addresses, and ports, accompanied by an expandable transparency viewer showing the exact extracted data sent to the model.
 - **Security Note:** Your Gemini API Key is entered securely via a password input field in the UI and is never hardcoded or stored in the repository.
 
